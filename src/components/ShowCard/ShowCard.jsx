@@ -1,7 +1,7 @@
 import React, { use } from 'react';
-import ProductsCard from './ProductsCard'; 
+import ProductsCard from './ProductsCard';
 
-const ShowCard = ({ getApiCardPromies, cart, handleCart }) => {
+const ShowCard = ({ getApiCardPromies, cart,  handleCart, activeTab, setActiveTab }) => {
     const showCards = use(getApiCardPromies);
 
     return (
@@ -11,24 +11,42 @@ const ShowCard = ({ getApiCardPromies, cart, handleCart }) => {
                 <p className='md:text-center md:w-xl text-gray-400'>
                     Choose from our curated collection of premium digital products.
                 </p>
-                <div className='flex gap-2'>
-                    <button className='btn p-5 btn-primary rounded-2xl'>Products</button>
-                    <button className='btn rounded-2xl bg-gray-800 text-white px-6'>
-                        Cart (<span>{cart.length}</span>)
-                    </button>
+                
+                
+                <div className="tabs tabs-box bg-blue-900 p-1 rounded-2xl">
+                    <input 
+                        type="radio" 
+                        name="my_tabs_1" 
+                        className="tab rounded-2xl" 
+                        aria-label="Products" 
+                        checked={activeTab === "Products"} 
+                        onClick={() => setActiveTab("Products")} 
+                    />
+                    <input 
+                        type="radio" 
+                        name="my_tabs_1" 
+                        className="tab rounded-2xl" 
+                        aria-label={`Cart (${cart.length})`} 
+                        checked={activeTab === "cart"} 
+                        onClick={() => setActiveTab("cart")} 
+                    />
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-10'>
-                {showCards?.map((card) => (
-                    <ProductsCard 
-                        key={card.id}   
-                        card={card}
-                        addToCart={handleCart}  
-                        isInCart={cart.some(item => item.id === card.id)}
-                    />
-                ))}
-            </div>
+            {activeTab === "Products" && (
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-10'>
+                    {showCards?.map((card) => (
+                        <ProductsCard
+                            key={card.id}
+                            card={card}
+                            addToCart={handleCart}
+                            isInCart={cart.some(item => item.id === card.id)}
+                        />
+                    ))}
+                </div>
+            )}
+
+            
         </div>
     );
 };
