@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds.",
+    "price": 29,
+    "duration": "Mo",
+    "badge": "Best Seller",
+    "icon": "📝",
+    "image": "/assets/icons/writing.png",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Content Booster",
+    "description": "Boost your blog writing with smart AI suggestions.",
+    "price": 19,
+    "duration": "Mo",
+    "badge": "Popular",
+    "icon": "🚀",
+    "image": "/assets/icons/booster.png",
+    "features": [
+      "30+ templates",
+      "SEO optimization",
+      "Auto headlines"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "CopyMaster AI",
+    "description": "Create powerful marketing copy for ads and campaigns.",
+    "price": 39,
+    "duration": "Mo",
+    "badge": "Premium",
+    "icon": "📢",
+    "image": "/assets/icons/copy.png",
+    "features": [
+      "Ad copy generator",
+      "Email templates",
+      "High conversion tips"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Blog Genius",
+    "description": "Write engaging blog posts with AI assistance.",
+    "price": 25,
+    "duration": "Mo",
+    "badge": "Trending",
+    "icon": "✍️",
+    "image": "/assets/icons/blog.png",
+    "features": [
+      "Topic ideas",
+      "Auto blog writer",
+      "Content rewriting"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "SEO Writer",
+    "description": "Optimize your content for search engines easily.",
+    "price": 35,
+    "duration": "Mo",
+    "badge": "Hot",
+    "icon": "🔍",
+    "image": "/assets/icons/seo.png",
+    "features": [
+      "Keyword suggestions",
+      "SEO scoring",
+      "Meta generator"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Script AI",
+    "description": "Generate scripts for videos and podcasts instantly.",
+    "price": 22,
+    "duration": "Mo",
+    "badge": "New",
+    "icon": "🎬",
+    "image": "/assets/icons/script.png",
+    "features": [
+      "Video scripts",
+      "Podcast ideas",
+      "Story builder"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Email Writer Pro",
+    "description": "Create professional emails with AI.",
+    "price": 15,
+    "duration": "Mo",
+    "badge": "Budget",
+    "icon": "📧",
+    "image": "/assets/icons/email.png",
+    "features": [
+      "Cold emails",
+      "Follow-up emails",
+      "Smart replies"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Social Media AI",
+    "description": "Generate engaging posts for social media platforms.",
+    "price": 18,
+    "duration": "Mo",
+    "badge": "Popular",
+    "icon": "📱",
+    "image": "/assets/icons/social.png",
+    "features": [
+      "Post generator",
+      "Hashtag suggestions",
+      "Caption ideas"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Resume Builder AI",
+    "description": "Create professional resumes and cover letters.",
+    "price": 20,
+    "duration": "Mo",
+    "badge": "Recommended",
+    "icon": "📄",
+    "image": "/assets/icons/resume.png",
+    "features": [
+      "Resume templates",
+      "Cover letters",
+      "Job tips"
+    ]
+  }
+]
