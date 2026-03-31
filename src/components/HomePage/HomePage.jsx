@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <>
 
-            <div className="hero  w-[80%] mx-auto">
+            <div className="hero  w-[80%] mx-auto md:mt-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
 
                     <img

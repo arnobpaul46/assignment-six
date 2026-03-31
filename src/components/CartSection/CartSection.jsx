@@ -5,8 +5,8 @@ const CartSection = ({ cart, handleRemove, handleCheckout }) => {
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
     return (
-        <div className="max-w-3xl mx-auto mt-10 p-6">
-            <div className="bg-blue-950  rounded-3xl shadow-lg p-8">
+        <div className=" w-[90%] md:w-[80%] mx-auto mt-10 p-6 ">
+            <div className="bg-blue-950  rounded-3xl shadow-lg p-8 ">
                 <h2 className="text-2xl font-bold mb-8 text-white">Your Cart</h2>
 
                 <div className="space-y-6">
@@ -39,7 +39,7 @@ const CartSection = ({ cart, handleRemove, handleCheckout }) => {
                             </div>
                         ))
                     ) : (
-                        <div className="text-center py-16">
+                        <div className="text-center py-16 ">
                             <p className="text-white text-4xl">Your cart is currently empty!</p>
                         </div>
                     )}

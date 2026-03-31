@@ -4,7 +4,7 @@ import ShowCard from './components/ShowCard/ShowCard';
 import CartSection from './components/CartSection/CartSection';
 import { toast } from 'react-toastify';
 import HomePage from './components/HomePage/HomePage';
-
+import RatingSection from './components/RatingSection/RatingSection'
 
 const getApiCards = async () => {
   const res = await fetch("/apiCard.json");
@@ -39,7 +39,9 @@ const handleCheckout = () => {
     <>
       <Navbar cartCount={cart.length} />
       <HomePage/>
-      {/* <Suspense fallback={<div className="text-center mt-20">Loading Products...</div>}>
+      <RatingSection/>
+
+      <Suspense fallback={<div className="text-center mt-20">Loading Products...</div>}>
         <ShowCard 
           getApiCardPromies={getApiCardPromies} 
           cart={cart} 
@@ -48,9 +50,9 @@ const handleCheckout = () => {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         />
-      </Suspense> */}
+      </Suspense>
 
-      {/* {activeTab === "cart" && <CartSection cart={cart} setCart={setCart} handleRemove={handleRemove} handleCheckout={handleCheckout}/>} */}
+      {activeTab === "cart" && <CartSection cart={cart} setCart={setCart} handleRemove={handleRemove} handleCheckout={handleCheckout}/>}
 
       
     </>
