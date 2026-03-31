@@ -2,6 +2,8 @@ import React, { useState, Suspense } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import ShowCard from './components/ShowCard/ShowCard';
 import CartSection from './components/CartSection/CartSection';
+import { toast } from 'react-toastify';
+
 
 const getApiCards = async () => {
   const res = await fetch("/apiCard.json");
@@ -16,6 +18,7 @@ const App = () => {
   const handleAddToCart = (card) => {
     if (!cart.find(item => item.id === card.id)) {
       setCart([...cart, card]);
+      toast.success("Add to Cart Successfully")
     }
   };
   
@@ -23,18 +26,19 @@ const App = () => {
 
   const handleRemove = (id) => {
     setCart(cart.filter(item => item.id !== id));
+    toast.warning("Item Remove Successfully")
 };
 
 const handleCheckout = () => {
     setCart([]); 
-    alert("Checkout Successful! Your cart is now empty."); 
+    toast.success("Payment Succesfull")
 };
 
   return (
     <>
       <Navbar cartCount={cart.length} />
       
-      <Suspense fallback={<div className="text-center mt-20">Loading Products...</div>}>
+      {/* <Suspense fallback={<div className="text-center mt-20">Loading Products...</div>}>
         <ShowCard 
           getApiCardPromies={getApiCardPromies} 
           cart={cart} 
@@ -43,9 +47,11 @@ const handleCheckout = () => {
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         />
-      </Suspense>
+      </Suspense> */}
 
-      {activeTab === "cart" && <CartSection cart={cart} setCart={setCart} handleRemove={handleRemove} handleCheckout={handleCheckout}/>}
+      {/* {activeTab === "cart" && <CartSection cart={cart} setCart={setCart} handleRemove={handleRemove} handleCheckout={handleCheckout}/>} */}
+
+      
     </>
   );
 };

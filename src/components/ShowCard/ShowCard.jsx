@@ -13,7 +13,7 @@ const ShowCard = ({ getApiCardPromies, cart,  handleCart, activeTab, setActiveTa
                 </p>
                 
                 
-                <div className="tabs tabs-box bg-blue-900 p-1 rounded-2xl">
+                <div className="tabs justify-center    tabs-box bg-blue-900 p-1 rounded-2xl">
                     <input 
                         type="radio" 
                         name="my_tabs_1" 
