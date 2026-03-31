@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import ShowCard from './components/ShowCard/ShowCard';
 import CartSection from './components/CartSection/CartSection';
 import { toast } from 'react-toastify';
+import HomePage from './components/HomePage/HomePage';
 
 
 const getApiCards = async () => {
@@ -18,7 +19,7 @@ const App = () => {
   const handleAddToCart = (card) => {
     if (!cart.find(item => item.id === card.id)) {
       setCart([...cart, card]);
-      toast.success("Add to Cart Successfully")
+      toast.success("Item Add to Cart Successfully ")
     }
   };
   
@@ -26,18 +27,18 @@ const App = () => {
 
   const handleRemove = (id) => {
     setCart(cart.filter(item => item.id !== id));
-    toast.warning("Item Remove Successfully")
+    toast.warning("Item Remove Successfully ")
 };
 
 const handleCheckout = () => {
     setCart([]); 
-    toast.success("Payment Succesfull")
+    toast.success("Payment successful")
 };
 
   return (
     <>
       <Navbar cartCount={cart.length} />
-      
+      <HomePage/>
       {/* <Suspense fallback={<div className="text-center mt-20">Loading Products...</div>}>
         <ShowCard 
           getApiCardPromies={getApiCardPromies} 
