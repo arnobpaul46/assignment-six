@@ -5,7 +5,7 @@ const ShowCard = ({ getApiCardPromies, cart,  handleCart, activeTab, setActiveTa
     const showCards = use(getApiCardPromies);
 
     return (
-        <div className='flex flex-col justify-center items-center w-[80%] mx-auto mt-10'>
+        <div className='flex flex-col justify-center items-center w-full px-4 md:w-[80%] mx-auto mt-10'>
             <div className='flex flex-col justify-center md:items-center space-y-3'>
                 <h1 className='text-4xl md:text-5xl font-semibold'>Premium Digital Tools</h1>
                 <p className='md:text-center md:w-xl text-gray-400'>

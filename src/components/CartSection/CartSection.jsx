@@ -5,7 +5,7 @@ const CartSection = ({ cart, handleRemove, handleCheckout }) => {
     const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
     return (
-        <div className=" w-[90%] md:w-[80%] mx-auto mt-10 p-6 ">
+        <div className=" w-full px-4 md:w-[80%] mx-auto mt-10 p-6 ">
             <div className="bg-blue-950  rounded-3xl shadow-lg p-8 ">
                 <h2 className="text-2xl font-bold mb-8 text-white">Your Cart</h2>
 

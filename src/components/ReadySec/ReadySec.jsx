@@ -3,7 +3,7 @@ import React from 'react';
 const ReadySec = () => {
     return (
         <div className="bg-primary py-20 px-6 mt-10">
-            <div className="max-w-4xl mx-auto text-center text-white">
+            <div className="w-full px-4 md:w-[80%] mx-auto text-center text-white">
                 
                 
                 <h2 className="text-3xl md:text-5xl font-bold mb-6">

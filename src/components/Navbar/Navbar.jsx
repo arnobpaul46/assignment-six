@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = ({ cartCount }) => {
     return (
         <div className="bg-base-100 shadow-sm sticky top-0 z-50">
-            <div className="navbar w-full lg:w-[80%] mx-auto px-2 lg:px-0">
+            <div className="navbar w-full px-4 md:w-[80%] mx-auto px-2 lg:px-0">
                 
                 {/* Navbar Start: Mobile Menu & Brand */}
                 <div className="navbar-start">

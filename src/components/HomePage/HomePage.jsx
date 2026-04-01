@@ -6,12 +6,12 @@ const HomePage = () => {
     return (
         <>
 
-            <div className="hero  w-[80%] mx-auto md:mt-10">
+            <div className="hero  w-full px-4 md:w-[80%] mx-auto md:mt-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
 
                     <img
                         src={HeroImg}
-                        className="max-w-sm rounded-lg shadow-2xl "
+                        className="w-80 rounded-lg shadow-2xl "
                         />
                     <div className='md:w-[45%] '>
                         <p className='flex gap-2 items-center bg-gray-900 px-3 py-2 rounded-2xl w-75'><img className='w-5 h-5' src={circleImg} alt="" />New: AI-Powered Tools Available</p>

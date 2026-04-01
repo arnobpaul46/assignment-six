@@ -3,11 +3,11 @@ import React from 'react';
 const Pricing = () => {
     return (
         <div className="py-20 ">
-            <div className="max-w-6xl mx-auto px-6">
+            <div className="w-full px-4 md:w-[80%] mx-auto mx-auto px-6">
                 
                 
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
+                    <h2 className=" text-3xl md:text-4xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
                     <p className="text-gray-300">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 

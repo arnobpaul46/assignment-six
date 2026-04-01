@@ -3,16 +3,15 @@ import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 
-
 const Footer = () => {
     return (
-        <footer className="bg-blue-950 text-gray-400 py-16 px-6 lg:px-20 ">
+        <footer className="bg-blue-950 text-gray-400 py-16 px-6 lg:px-20">
             <div className="w-full md:w-[80%] mx-auto">
+                
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-10 mb-12">
 
-                <div className="grid grid-cols-3 md:grid-cols-5 gap-10 mb-12">
-
-
-                    <div className="col-span-3 md:col-span-1">
+                    
+                    <div className="col-span-2 md:col-span-1">
                         <h2 className="text-white text-3xl font-bold mb-6">DigiTools</h2>
                         <p className="text-sm leading-relaxed max-w-xs">
                             Premium digital tools for creators, professionals, and businesses.
@@ -20,7 +19,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-
+                    
                     <div className="col-span-1">
                         <h3 className="text-white font-semibold mb-6">Product</h3>
                         <ul className="space-y-4 text-sm">
@@ -31,7 +30,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-
+                    
                     <div className="col-span-1">
                         <h3 className="text-white font-semibold mb-6">Company</h3>
                         <ul className="space-y-4 text-sm">
@@ -42,7 +41,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-
+                    
                     <div className="col-span-1">
                         <h3 className="text-white font-semibold mb-6">Resources</h3>
                         <ul className="space-y-4 text-sm">
@@ -53,26 +52,24 @@ const Footer = () => {
                         </ul>
                     </div>
 
-
-                    <div className="col-span-1 ">
+                    
+                    <div className="col-span-1">
                         <h3 className="text-white font-semibold mb-6">Social Links</h3>
                         <div className="flex gap-3">
-                            <a href="#" className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-all">
-                                <span className="text-red-800 text-xl  "><FaSquareInstagram /></span>
+                            <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 hover:bg-gray-200 transition-all shadow-sm">
+                                <span className="text-red-800 text-xl leading-none"><FaSquareInstagram /></span>
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-all">
-                                <span className="text-blue-800 text-xl"><FaFacebookSquare /></span>
+                            <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 hover:bg-gray-200 transition-all shadow-sm">
+                                <span className="text-blue-800 text-xl leading-none"><FaFacebookSquare /></span>
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-full bg-white flex items-center justify-center hover:bg-gray-200 transition-all">
-                                <span className="text-black text-xl"><BsTwitterX />
-                                </span>
+                            <a href="#" className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 hover:bg-gray-200 transition-all shadow-sm">
+                                <span className="text-black text-lg leading-none"><BsTwitterX /></span>
                             </a>
                         </div>
                     </div>
                 </div>
 
-
-                <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
+                <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs gap-4">
                     <p>© 2026 Digitools. All rights reserved.</p>
                     <div className="flex gap-6 font-medium">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
