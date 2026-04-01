@@ -13,7 +13,7 @@ const StatsSection = () => {
                     </div>
 
                     {/* Vertical Divider 1 (Hidden on Mobile) */}
-                    <div className="  w-[1px]  md:h-16 bg-white/30"></div>
+                    <div className=" block w-[1px] h-16 bg-white/30"></div>
 
                     {/* Item 2 */}
                     <div className="text-center flex-1">
@@ -22,7 +22,7 @@ const StatsSection = () => {
                     </div>
 
                     {/* Vertical Divider 2 (Hidden on Mobile) */}
-                    <div className="hidden md:block w-[1px] h-16 bg-white/30"></div>
+                    <div className="block w-[1px] h-16 bg-white/30"></div>
 
                     {/* Item 3 */}
                     <div className="text-center flex-1">

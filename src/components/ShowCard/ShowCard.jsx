@@ -13,11 +13,11 @@ const ShowCard = ({ getApiCardPromies, cart,  handleCart, activeTab, setActiveTa
                 </p>
                 
                 
-                <div className="tabs justify-center    tabs-box bg-blue-900 p-1 rounded-2xl">
+                <div className="tabs justify-center mx-auto tabs-box bg-blue-900 p-1 rounded-2xl w-40">
                     <input 
                         type="radio" 
                         name="my_tabs_1" 
-                        className="tab rounded-2xl" 
+                        className="tab rounded-2xl text-white" 
                         aria-label="Products" 
                         checked={activeTab === "Products"} 
                         onClick={() => setActiveTab("Products")} 
@@ -25,7 +25,7 @@ const ShowCard = ({ getApiCardPromies, cart,  handleCart, activeTab, setActiveTa
                     <input 
                         type="radio" 
                         name="my_tabs_1" 
-                        className="tab rounded-2xl" 
+                        className="tab rounded-2xl text-white" 
                         aria-label={`Cart (${cart.length})`} 
                         checked={activeTab === "cart"} 
                         onClick={() => setActiveTab("cart")} 
