@@ -8,6 +8,7 @@ import RatingSection from './components/RatingSection/RatingSection'
 import GetStarted from './components/GetStarted/GetStarted';
 import Pricing from './components/Pricing/Pricing';
 import ReadySec from './components/ReadySec/ReadySec';
+import Footer from './components/Footer/Footer';
 
 const getApiCards = async () => {
   const res = await fetch("/apiCard.json");
@@ -60,6 +61,7 @@ const handleCheckout = () => {
       <GetStarted/>
       <Pricing/>
       <ReadySec/>
+      <Footer/>
       
     </>
   );
