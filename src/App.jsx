@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 import HomePage from './components/HomePage/HomePage';
 import RatingSection from './components/RatingSection/RatingSection'
 import GetStarted from './components/GetStarted/GetStarted';
+import Pricing from './components/Pricing/Pricing';
 
 const getApiCards = async () => {
   const res = await fetch("/apiCard.json");
@@ -56,6 +57,7 @@ const handleCheckout = () => {
       {activeTab === "cart" && <CartSection cart={cart} setCart={setCart} handleRemove={handleRemove} handleCheckout={handleCheckout}/>}
 
       <GetStarted/>
+      <Pricing/>
       
     </>
   );
