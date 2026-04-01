@@ -1,16 +1,24 @@
-# React + Vite
+# 🚀 Project Name: DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📝 A Little Description
+DigiTools is a modern, high-performance digital marketplace web application designed for creators and professionals to discover and manage premium digital assets. Built with a focus on speed and user experience, it provides an intuitive platform where users can browse products, manage a real-time shopping cart, and explore transparent pricing plans—all wrapped in a sleek, responsive, and professional dark-themed interface.
 
-Currently, two official plugins are available:
+### 🛠️ Technology That I Use
+*   **Frontend Library:** [React.js](https://reactjs.org/) (Hooks, Suspense, use() hook)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **Component Library:** [DaisyUI](https://daisyui.com/)
+*   **Icons & Assets:** Lucide icons and images
+*   **Data Source:** Local JSON API (`apiCard.json`)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### ✨ 3 Key Features
+1.  **🛒 Dynamic Shopping Cart System:**
+    A fully functional cart where users can add premium tools with a real-time badge count in the Navbar. It includes the ability to remove specific items and a "Proceed to Checkout" feature that clears the entire cart instantly.
 
-## React Compiler
+2.  **📑 Interactive Tabbed Navigation:**
+    A seamless switching mechanism between the "Products" gallery and the "Cart" view using dynamic tabs. This provides a fast, single-page experience (SPA) without any page reloads.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3.  **📱 Optimized Responsive Design:**
+    The entire project is "Mobile First" and fully responsive. It features a custom hamburger menu for mobile devices, adaptive grids for product displays, and a 5-column responsive footer that adjusts beautifully across all screen sizes.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
